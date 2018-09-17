@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+	<title>	Tourism Of Bangladesh</title>
+	<link rel="stylesheet" type="text/css" href="style4.css"/>
+</head>
+<body>
+
+       
+		<div class="fix main">
+		<div class="slider">	
+		<div class="fix slider_text">
+		<h2>New view of</h2>
+		<h1>Tourism Of Bangladesh</h1>
+		<h2>Welcome to this website....</h2>
+		<h3>Happy travelling</h3>
+		</div>
+		</div>
+		
+		<div class="fix maincontent">
+		  
+		  <div class="fix sidebar">
+		  <marquee direction="up">
+		  <ul>
+		<li><a href="">Here you can know about Bangladesh</a></li>
+		<li><a href="">Hotel List</a></li>
+		<li><a href="">Search any place</a></li>
+		<li><a href="">Neccessary tips</a></li>
+		<li><a href="">Travel Essentials</a></li>
+		</ul>
+		  </marquee>
+		  </div>
+		  <div class="fix content">
+		  <h2>Please login here....</h2>
+		  <form action='login.php' method='POST'>
+			Username: <input type='text' name='username'><br>
+			Password: <input type='password' name='password'><br> 
+			<input type='submit' name='log in'>
+		</form> <p>
+		<a href='register.php'>Register</a>
+		  
+		  </div>
+   
+		</div>
+		<div class="fix footer">
+		<p>&copy; Sakifa Aktar,All Rights Reserved</p>
+		</div>
+
+		</div>
+		
+</body>		
+		
+</html>
