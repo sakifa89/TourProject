@@ -1,0 +1,100 @@
+*{margin:0;padding:0}
+body{font-family:arial;font-size:16px;line height:22px;color:#666;background:#C0C0C0}
+.fix{overflow:hidden}
+.main{width:1200px;margin:0 auto;display:block;background:#FFFFFF}
+.container{
+    margin:0;
+	padding:0;
+	background-color:#C18D9A;
+}
+
+#head_wrap{
+     width:100%;
+	 height:100px;
+	 border-bottom:10px solid #49033A;
+	 padding:10px;
+	 background:#7C0361;
+
+}
+
+
+
+#header{
+    margin-left:30px;
+	height:100px;
+	width:1000px;
+	float:140px left;
+}
+#header  h1{
+  color:white;
+  font-size:40px;
+  margin-left:100px;
+  float:right;
+
+}
+
+
+#header button{
+    width:200px;
+	float:right;
+}
+#header demo{
+    width:200px;
+	float:left;
+}
+.mainmenu {background:#EDEDED;overflow:hidden;border-bottom:10px solid #49033A;}
+.mainmenu ul{margin:0;padding:0;list-style:none;}
+.mainmenu ul li{float:left;border-right:2px solid;}
+.mainmenu ul li a{display:block;padding:10px 50px;color:#49033A;text-decoration:none;}
+.mainmenu ul li a:hover{background:#fff;}
+
+.slider{height:350px;width:1200px;background:#fff;border-bottom:10px solid #49033A;}
+.slider p{color:green;font-size:16px}
+div.maincontainer {
+    margin-top:70px;
+    width: 100%;
+    border: 1px solid gray;
+}
+nav {
+    float: left;
+    max-width: 500px;
+    margin: 0;
+    padding: 1em;
+}
+article {
+   color:#49033A;
+    margin-left: 510px;
+    padding: 3em;
+    overflow: hidden;
+}
+article{
+  color:
+}
+div.ac{
+    margin-top:70px;
+    width: 100%;
+    border: 1px solid gray;
+}
+article {
+   color:#49033A;
+    margin-left:10px;
+    padding: 3em;
+    overflow: hidden;
+}
+navc {
+    float: right;
+    max-width: 500px;
+    margin: 0;
+    padding: 1em;
+}
+.sidebar{width:300px;margin-right:30px;background:#D0E6FB;float:left;padding:20px}
+.sidebar ul{margin:0;padding:0;list-style:none}
+.sidebar ul li{padding:5px;border-bottom:1px solid #ddd;position:relative}
+.sidebar ul li a{text-decoration:none;color:#666}
+.sidebar ul li a:hover{color:#000}
+.content{width:800px;font-size:15px;background:#FFFFFF}
+.content h2{margin-bottom:15px;font-weight:normal;color:red}
+.content p{margin-bottom:15px}
+.accomodation{margin-top:40px;margin-left:30px;color:#49033A;}
+.accomodation h2{color:#49033A;}
+.footer{margin:0;padding:10px;background:#49033A;color:white}
