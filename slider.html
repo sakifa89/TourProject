@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>Amazing Slider</title>
+    
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+    
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width:1000px;
+}
+
+td, th {
+    border: 0px solid ;
+    text-align: center;
+    padding: 8px;
+}
+th{
+	background-color: #C18D9A;
+}
+
+tr:nth-child(odd) {
+    background-color: #C18D9A;
+}
+tr:nth-child(even) {
+    background-color: #EDEDED;
+}
+.main{padding:0;margin-left:27px;background:#C18D9A;}
+.ab{
+    margin:0;
+	padding:0;
+	background-color:#C18D9A;
+	height:127px;
+	width:100%;
+	margin-left:0px;
+}
+
+#head_wrap{
+margin-top:-4px;
+     width:100%;
+	 height:127px;
+	 border-bottom:10px solid #49033A;
+	 padding:10px;
+	 background:#7C0361;
+
+}
+
+
+
+#hhh{
+
+    margin-left:70px;
+	height:127px;
+	width:1000px;
+	float:180px left;
+}
+#hhh  h1{
+margin-top:-2px;
+  color:white;
+  font-size:40px;
+  margin-left:70px;
+  float:right;
+
+}
+.mainmenu {width:100%;background:#EDEDED;margin-bottom:100px;overflow:hidden;border-bottom:10px solid #49033A;}
+.mainmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EDEDED;
+	margin-left:10px;
+}
+
+.mainmenu li {
+    float: left;
+	margin-left:40px;
+	float:left;
+	border-right:2px solid #49033A;
+}
+
+.mainmenu li a, .dropbtn {
+    display: inline-block;
+    color:#49033A;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.mainmenu li a:hover, .dropdown:hover .dropbtn {
+    background-color: #C18D9A;
+}
+
+.mainmenu li.dropdown {
+    display: inline-block;
+}
+
+.mainmenu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EDEDED;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.mainmenu .dropdown-content a {
+    color: #49033A;
+    padding: 17px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.mainmenu .dropdown-content a:hover {background-color:#C18D9D;}
+
+.mainmenu .dropdown:hover .dropdown-content {
+    display: block;
+}
+* {
+    box-sizing: border-box;
+}
+.header{margin-left:30px;}
+.header h1{margin-left:30px;color:#49033A;}
+.header h3{margin-left:30px;color:#49033A;margin-bottom:40px;}
+.footer{margin-top:20px;padding:5px;background:#49033a;color:white}
+</style>
+</head>
+<body style="background-color:#C7C7C7;width:1170px;margin-left:65px">
+<div class="main">
+<div style="max-width:1300px;">
+    <div class="fix ab">
+	<div id="head_wrap">
+	
+	<div id="hhh">
+	 <h1>Tourism Of Bangladesh</h1>
+		<center><img src="images/logo1.png" style="float:center"/></center>
+		
+	</div>
+	</div>
+	</div>
+	<div class="fix mainmenu">
+		<ul>
+			<li><a href="homenew.html">Home</a></li>
+			<li><a href="AboutBangladesh.html">About Bangladesh</a></li>
+			
+			<li><a href="searchpage.php">Things to see</a></li>
+			<li class="dropdown">
+    <a href="" class="dropbtn">Where to stay</a>
+    <div class="dropdown-content">
+      <a href="hotel.html">Hotels</a>
+      <a href="resort.html">Resorts</a>
+      
+    </div>
+	</li>
+	<li><a href="flipgalary.html">Transportation</a></li>
+			<li><a href="travelfinal.html">Travel Essential</a></li>
+		</ul>
+		</div>
+    <!-- Insert to your webpage where you want to display the slider -->
+    <div id="amazingslider-1" style="display:block;position:relative;margin:15px auto 30px;margin-bottom:30px;">
+        <ul class="amazingslider-slides" style="display:none;">
+            <li><img src="images1/hotel1.jpg" alt="hotel" />            </li>
+            <li><img src="images1/hotel2.jpg" alt="hotel2" />            </li>
+            
+            <li><img src="images1/hotel5.jpg" alt="hotel5" />            </li>
+            <li><img src="images1/hotel6.jpg" alt="hotel6" />            </li>
+            <li><img src="images1/hotel4.jpg" alt="hotel4" />            </li>
+        </ul>
+        <ul class="amazingslider-thumbnails" style="display:none;">
+            <li><img src="images1/thumbnails/hotel1.jpg" /></li>
+            <li><img src="images1/thumbnails/hotel2.jpg" /></li>
+           
+            <li><img src="images1/thumbnails/hotel5.jpg" /></li>
+            <li><img src="images1/thumbnails/hotel6.jpg" /></li>
+            <li><img src="images1/thumbnails/hotel4.jpg" /></li>
+        </ul>
+       
+    </div>
+    <!-- End of body section HTML codes -->
+	<div class="header">
+	 <h1>Accommodation facilities of BPC</h1>
+
+<h3>BANGLADESH PARJATAN CORPORATION</h3>
+<h3>HOTEL INFORMATION</h3>
+</div>
+<center>
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Unit</th>
+    
+  </tr>
+  <tr>
+    <td>Parjatan Holiday Complex
+        Cox's Bazar.
+        Fax: 0341-64202Restaurant Capacity- 130</td>
+    <td>Hotel Shaibal (0341-63274)
+        AC Twin Bed 
+        AC Royal Suite (Couple Bed) 
+        Standard Twin Bed 
+        Conference Hall (100 p)     
+        All Rooms: TV, TEL, HOT&COLD WATER, MINI FRIDGE
+       Cottage: Per cottage 1 AC room (Couple bed), 1Non AC Twin bed, Drawing room, Drivers room, Dining  & Kitchen facility)</td>
+  </tr>
+  <tr>
+    <td>Parjatan Motel Probal
+      Cox's Bazar 
+      Restaurant Capacity-80</td>
+    <td>Motel Probal (0341 -63211)
+      AC Couple Bed/Twin Bed               
+       Non AC Twin Bed/Couple Bed 
+      Economy Room (Twin Bed) 
+       Conference Hall (50-60) NAC Per day
+       All rooms:TV, TEL, HOT&COLD WATER
+      Dormetory (8 bed)
+     20 Person
+     30 Person
+      40 Person
+      50+ Person</td>
+    
+  </tr>
+  <tr>
+    <td>Parjatan Motel  UpalCox's Bazar</td>
+    <td>Motel Upal (0341-64258)
+Non AC Twin Bed TV, Tele,Hot & Cold water 
+AC Twin Bed Mini Fridge, TV,Tele,Hot & Cold water 
+Dormitory Bed (per bed)</td>
+    
+  </tr>
+  <tr>
+    <td>Chittagong
+Railway Station</td>
+    <td>Motel Shaikat (031-611046, 611047) 
+Non AC Twin Bed 
+AC Twin Bed</td>
+   
+  </tr>
+  <tr>
+    <td>Parjatan Holiday Complex
+Rangamati
+ Bar Capacity- 14
+Restaurant Capacity- 32</td>
+    <td>Parjatan Motel (0351-63126, 61046)
+Non AC Twin Bed-TV  
+AC Twin Bed-TV,TEL,HOT & COLD WATER Tribal Honeymoon cottage -1 (per room) 1 d bed, 1 s bed TV, Tel Full cottage 
+Tribal Honeymoon cottage -2 (Exclusive cottage)</td>
+   
+  </tr>
+  <tr>
+    <td>Mongla 
+  
+    Restaurant Capacity-50</td>
+    <td>Parjatan Hotel Pashur (04662-75100) 
+Non AC Twin Bed-TEL,HOT&COLD WATER AC Twin Bed-TV,TEL,HOT&COLD WATER</td>
+   
+  </tr>
+  <tr>
+  <td>Parjatan Motel RangpurFax: 0521-62894 
+ 
+ 
+Restaurant Capacity-50</td>
+  <td>Parjatan Motel Rangpur  (0521-63681)
+Non AC Twin Bed-TEL,HOT& COLD WATER
+AC Deluxe- TEL,TV,HOT& COLD WATER
+VIP AC Suite-FRIDGE,TEL,TV, HOT&COLD
+Economy Bed 
+AC C. Hall (150) (First Two Hours) 
+ (Next Per Hour)</td>
+  
+  </tr>
+  <tr>
+  <td>Bogra
+Fax: 051-66753 
+ 
+Restaurant Capacity-60</td>
+<td>Parjatan Motel Bogra (051-67024-27)
+Non AC Twin Bed TEL,HOT & COLD WATER
+AC Twin Bed TEL,HOT & COLD WATER
+AC Suite 
+Drivers Bed 
+AC Conf. Hall (350) (Full Day) 
+next per hour
+Mini Confe. (30)</td>
+  </tr>
+  <tr>
+  <td>Sylhet 
+Phone: 0821-712426
+Restaurant Capacity - 60</td>
+<td>Parjatan Motel (0821-712426)
+Non AC Twin Bed 
+AC Twin Bed with T.V. 
+Conference Hall (Full Day) 
+(Half Day)</td>
+  </tr>
+  <tr>
+  <td>Meherpur</td>
+  <td>Parjatan Motel Muzibnagore
+AC Suite Room
+AC Deluxe Room
+Non AC Room
+Con. Hall (100 Pers.) (Full Day)
+(Half Day)</td>
+  </tr>
+  <tr>
+  <td>Dinajpur
+ 
+Restaurant Capacity-30</td>
+<td>Parjatan Motel  (0531-64718)
+AC Twin Bed (1st floor) 
+AC Deluxe Twin Bed (2nd floor) 
+AC Deluxe Twin Bed (3rd  floor) 
+Economy Bed 
+All Rooms: TV, TEL, HOT & COLD WATER
+Conference Hall (Full Day) 
+(Half Day)</td>
+  </tr>
+  <tr>
+  <td>Rajshahi
+Fax: 0721-775237 
+Restaurant Capacity -  50</td>
+<td>Parjatan Motel (0721 -775492)  
+AC Single Bed
+AC Twin Bed 
+VIP Suite
+Drivers Bed 
+AC Conference Hall  (100 Pers.)  First two hour
+Next per hour
+AC Mini Conference Hall  (25 Pers.)  Per hour
+NonAC Conference Hall  (50 Pers.)  Full/Half day</td>
+  </tr>
+  <tr>
+  <td>Holiday Homes Kuakata
+ 
+Restaurant Capacity -50</td>
+<td>Parjatan Motel (04428-56004)
+AC Double Bed (Deluxe)-TV, TEL, HOT & COLD WATER
+AC Twin Bed – TV, TEL
+Non AC Twin Bed – TV
+Economy Room 
+Conference Hall (50 Pers.)</td>
+
+  </tr>
+  <tr>
+  <td> Youth in Kuakata</td>
+  <td>NON AC Four Bed
+NON AC Twin Bed
+AC TWIN Bed
+Royal Suite room
+Conference Hall</td>
+</tr>  
+<tr>
+<td>Tungipara
+ 
+Restaurant Capacity -50</td>
+<td>Parjatan Motel (06655-56349)
+Non AC Twin Bed 
+AC Twin Bed 
+Dormitory (Each room 4 bed)</td>
+</tr>
+<tr>
+<td>TeknafHotel Ne-Taung 
+  
+Restaurant Capacity -50</td>
+<td>Hotel Ne-Taung (03426-75104)
+Non Ac Twin Bed –HOT& COLD WATER,.TEL 
+Ac Twin Bed HOT,& CLOD WATER,TEL,TV 
+Ac Suite Room</td>
+</tr>
+<tr>
+<td>Parjatan Motel 
+Khagrachhari
+Restaurant Capacity -50</td>
+<td>Khagrachhari & Amusement Centre(0371-62084-85)
+Non AC Twin Bed TV, TEL
+AC Twin Bed TV, TEL, HOT & COLD WATER
+AC Suite Room TV, TEL, HOT & COLD WATER
+Economy Room
+Conference Hall (100 Pers.) (Full day)
+(Half day)</td>
+</tr>
+<tr>
+<td>Parjatan Motel Benapole 
+  01716984262
+  
+Restaurant Capacity -50</td>
+<td>Motel Benapole (04228-75411) 
+Non AC Twin Bed 
+AC Twin Bed 
+AC Suite Room 
+Dormitory (Per Room-4 Bed) Per bed
+All Rooms: TV, TEL, HOT & COLD WATERConference Hall   (1st two hour)
+(Next per hour)</td>
+</tr>
+<tr>
+<td>Hotel Abakash Dhaka
+Tel: 8811109 9899288 9899290 Fax: 8811150</td>
+<td>Restaurant Capacity-100
+AC Twin Deluxe-TV, TEL ,FRIDGE, HOT & COLD AC Twin Standard 
+AC Conference Hall (Capacity-40 Pers.) (Full day)
+(Half day)
+Banquet Hall (150 Pers.)  (Full day)
+(Half day)</td>
+</tr>
+</table>
+
+
+<div class="header">
+
+<h1>BANDARBAN</h1>
+
+<h3>Parjatan Motel</h3>
+<h3>Phone : +880-361-62741-2Tariff</h3>
+</div>
+<table>
+<tr>
+  <th>UNIT</th>
+  <th>ROOM</th>
+  <th>BED</th>
+</tr>
+<tr>
+  <td>Royal AC Suite (Double Bed)</td>
+  <td>02</td>
+  <td>02</td>
+</tr>
+<tr>
+  <td>AC Deluxe Room (Twin Bed) -
+Mini Fridge, Tele, TV, Hot&Cold water</td>
+  <td>02</td>
+  <td>02</td>
+</tr>
+<tr>
+  <td>AC Twin Bed Room –
+TV, Tele, Hot & Cold water</td>
+  <td>06</td>
+  <td>12</td>
+  </tr>
+  <tr>
+  <td>Non AC Three Bed</td>
+  <td>03</td>
+  <td>09</td>
+</tr>
+  <tr>
+  <td>Non AC Twin Bed</td>
+  <td>16</td>
+  <td>32</td>
+</tr>
+<tr>
+  <td>Economy Room</td>
+  <td>01</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Conference Hall (100 Pers.)</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <h3>Standard: 1 AC Suite, 8 AC Twin, 15 Non AC Twin, 1 Economy Room(10 beds), Conference Hall – 100 Seating, Restaurant – 50 seating.</h3>
+</tr>
+</table>
+<div class="header">
+<h1> Five Star *****</h1>
+</div>
+<table>
+<tr>
+
+<th>Location</th>
+<th>Hotel Name</th>
+<th>Address</th>
+<th>Cell No</th>
+<th>E-mail/Web</th>
+</tr>
+<tr>
+<td>Dhaka</td>
+<td>Pan Pacific Sonargaon Hotel, Dhaka</td>
+<td>107 , Kazi Nazrul Islam Avenue</td>
+<td>880 2 811 1005</td>
+<td>Pan Pacific Sonargaon Hotel, Dhaka</td>
+
+
+</tr>
+<tr>
+<td>Airport Road,Dhaka</td>
+<td>Radisson Water Garden Hotel, Dhaka</td>
+<td>Airport Road, Dhaka Cantonment,
+Dhaka 1206 Bangladesh.</td>
+<td> 88 02 8754555</td>
+<td>reservations.dhaka@radisson.com
+Website : Radisson Water Garden Hotel</td>
+
+
+</tr>
+<tr>
+<td>Gulshan,Dhaka</td>
+<td>the westin hotel</td>
+<td>Main Gulshan Avenue, Gulshan Ave, Dhaka 1212	</td>
+<td>01755642202</td>
+<td>munirul.kabir@westin.com</td>
+</tr>
+<tr>
+<td>Banani,
+Dhaka</td>
+<td>Hotel sarina</td>
+<td>Plot#27, Road#17, Bir UttamAminul Haque Sarak,</td>
+<td>982112, 02-8851011</td>
+<td>www.sarinahotel.com</td>
+</tr>
+<tr>
+<td>Nikunjo,
+Dhaka</td>
+<td>DHAKA REGENCY HOTEL & RESORT</td>
+<td>Airport Road,khilkhet, Front Road, Dhaka</td>
+<td>88 01713332651-54	</td>
+<td>INFO@DHAKAREGENCY.COM</td>
+</tr>
+<tr>
+<td>Cox's Bazar,</td>
+<td>Seagull Hotel Ltd</td>
+<td>Hotel Motel Zone ,Cox’s Bazar Sea Beach,Cox's Bazar</td>
+<td>01766666537
+Ph 034164436</td>
+<td>reservations@seagullhotelbd.com; sales@seagullhotelbd.com</td>
+</tr>
+<tr>
+<td>Cox's Bazar</td>
+<td>Ocean Paradise Hotel and Resort</td>
+<td>28-29,Hotel Motel Zone,Kolatoli,Cox's Bazar</td>
+<td>Ph: 034152370</td>
+<td>reservation@oceanparadisehotel.com</td>
+</tr>
+</table>
+<table>
+<div class="header">
+<h1> Four Star ****</h1>
+</div>
+<tr>
+<th>Location</th>
+<th>Hotel Name</th>
+<th>Address</th>
+<th>Cell No</th>
+<th>E-mail/Web</th>
+</tr>
+<tr>
+<td>Chittagong</td>
+<td>Agrabad Hotel Ltd</td>
+<td>Agrabad Commercial Area, Chittagong, Bangladesh</td>
+<td>+88-031-713311-8 (8 lines)
+Cell: 01766665163</td>
+<td>info@agrabadhotels.com</td>
+</tr>
+<tr>
+<td>Chittagong</td>
+<td>The Peninsula Chittagong</td>
+<td>486/B O.R. Nizam Road, CDA Avenue, Chittagong-4000</td>
+<td>+88 (031) 2850860-69,
++88 (031) 616722, 619850</td>
+<td>Email : reservation[at]peninsulactg.com
+www.peninsulactg.com</td>
+</tr>
+<tr>
+<td>Sylhet</td>
+<td>Rose View Hotel</td>
+<td>Plot#2, Block#B, Shahjalal Uposhohor, Sylhet-3100.</td>
+<td>Phone: 0821-721439</td>
+<td>www.roseviewhotel.com</td>
+</tr>
+</table>
+<table>
+<div class="header">
+<h1> Three Star ***</h1>
+</div>
+<tr>
+<th>Location</th>
+<th>Hotel Name</th>
+<th>Address</th>
+<th>Cell No</th>
+<th>E-mail/Web</th>
+</tr>
+<tr>
+<td>Motijhill,
+Dhaka</td>
+<td>Hotel Purbani Int. Ltd.</td>
+<td>1, Dilkusha C/A, Dhaka-1000</td>
+<td>ph: 02-9552229</td>
+<td>www.hotelpurbaniltd.com</td>
+</tr>
+<tr>
+<td>Kakrail,
+Dhaka</td>
+<td>Hotel Razmoni Isha Kha</td>
+<td>89/3, V.I.P. Road, Kakrail, Dhaka.</td>
+<td>Phone: +880-2-8322426-9
+Mobile : 00 88 01760004814</td>
+<td>Email: razmoni@bdcom.com</td>
+</tr>
+<tr>
+<td>Mirpur,
+Dhaka</td>
+<td>Grand Prince Hotel</td>
+<td>paradise Plaza, Com. Plot # 6 and 11,
+Block-B, Mirpur-1, Dhaka-1216,,Bangladesh</td>
+<td>Cell: +8801718962156,Tel: +8802 9012952, 8021599,</td>
+<td>info@grandprince-dhaka.com
+Web: www.grandprince-dhaka.com</td>
+</tr>
+<tr>
+<td>Gulshan</td>
+<td>Hotel washinton</td>
+<td>56 Gulshan Avenue, Road# 132, Dhaka 1212</td>
+<td>01847090501</td>
+<td>hosm@washingtonbd.com</td>
+</tr>
+<tr>
+<td>Gulshan</td>
+<td>Six season hotel</td>
+<td>House #19, Rd No 96, gulsan 2,Dhaka 1212</td>
+<td>01987009825</td>
+<td>rezaur.rahman@sixseasonhotel.com</td>
+</tr>
+<tr>
+<td>Motijhill</td>
+<td>Hotel 71</td>
+<td>176 shaheed syed nazrul islam sarani</td>
+<td>01761788549</td>
+<td>info@hotel71bd.com</td>
+</tr>
+<tr>
+<td>Gulshan</td>
+<td>Sweet dream hotel</td>
+<td>60 Kemal Ataturk Avenue, Dhaka 1213</td>
+<td>01919777769</td>
+<td>gm.seles@hotelsweetdream.com.bd</td>
+</tr>
+<tr>
+<td>Ashulia</td>
+<td>Concord Resort Atlantis</td>
+<td>Fantasy Kingdom,Jamgora,Ashulia
+,Savar.Dhaka</td>
+<td>home: 1937402949, 01913531547, 01913531378</td>
+<td>www.fantasy-kingdom.net.bd/resort-atlantis.php</td>
+</tr>
+<tr>
+<td>Chittagong	 </td>
+<td>Hotel Tower Inn Internetional Ltd.</td>
+<td>183, Jublee Road, Chittagong</td>
+<td>Phone: 880-31-2862691-2</td>
+<td>Email: info@hoteltowerinn.com
+www.hoteltowerinn.com</td>
+</tr>
+<tr>
+<td>Chittagong.</td>
+<td>Well Park Residence	</td>
+<td>Road # 01, Plot # 02, O.R. Nizam Road, Chittagong.</td>
+<td>Phone: +88 031 – 2557035, 2557261, 2557262</td>
+<td>www.wellparkbd.com</td>
+</tr>
+<tr>
+<td>Cox's Bazar.				</td>
+<td>Hotel Sea Palace Limited</td>
+<td>Kalatoli Road, Cox's Bazar.</td>
+<td>Phone: +8801714-652227</td>
+<td>http://hotelseapalacebd.com</td>
+</tr>
+<tr>
+<td>Cox's Bazar.			</td>
+<td>Hotel Sea Crown	Marin Drive,</td> 
+<td>Kola Toil New Beach, Cox's Bazar.</td>
+<td>Phone : 88-0341-64795, 88-0341-64474
+Mobile : 88-01817089420</td>
+
+<td>Email : seacrownhotel[at]gmail com
+www.hotelseacrownbd.com</td>
+</tr>
+<tr>
+<td>Cox's Bazar				</td>
+<td>Long Beach Hotel Ltd.</td>
+<td>14 Kalatoli, Hotel-Motel Zone, Cox's Bazar, Chittagong.</td>
+<td>Phone: 034151062,
++8801730338905</td>
+<td>Email: sales@longbeachhotelbd.com
+www.longbeachhotelbd.com/new</td>
+</tr>
+<tr>
+<td>Cox's Bazar</td>
+<td>Hotel the Cox Today</td>
+<td>Plot-7, Road-02, Hotel Motel Zone, Kolatoly Road, Cox's Bazar, Chittagong</td>
+<td>Ph: 9882638</td>
+<td>Email: reservationdhk@hotelthecoxtoday.com, info@hotelthecoxtoday.com, sales_dhk@ hotelthecoxtoday.com
+www.hotelthecoxtoday.com</td>
+</tr>
+<tr>
+<td>Silimpur, Bogra</td>
+<td>Hotel Naz Garden</td>
+<td>Silimpur, Bogra-5800</td>
+<td>Phone: +8801755-661199</td>
+<td>www.hotelnazgarden.com</td>
+</tr>
+</table>
+<div class="header">
+<h1>Other Hotels</h1>
+</div>
+<table>
+<tr>
+<th>Location</th>
+<th>Hotel Name</th>
+<th>Address</th>
+<th>Cell No</th>
+<th>E-mail/Web</th>
+</tr>
+<tr>
+<td>Mohakhali		</td>
+<td>Bangladesh Parjatan Corporation		</td>
+<td>83-88 Mohakhali, Dhaka</td>
+<td>Phone : 880-2-8811109
+9899288, 9899290</td>
+<td>abakash@citecho.net ,
+abakash@gmail.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Amazon lilly</td>
+<td>House No. 28, Rd No. 19/A, Dhaka</td>
+<td>01680000888</td>
+<td>lakeview@bol-online.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Hotel rose garden</td>
+<td>House # 86, Road # 17A, Block-E, Banani,Dhaka</td>
+<td>01711537845</td>
+<td>rosegardendhaka@yahoo.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Regent guest house</td>
+<td>House 100,Rd1 13/C,BLOCK –E, banani</td>
+<td>1716710116</td>
+<td>hotelregentbd@yahoo.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Hotel swiss garden</td>
+<td>Road # 13, House # 89, Block-D, Banani, Dhaka</td>
+<td>1720039610</td>
+<td>info@hotelswissgarden.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Platinum suites</td>
+<td>Plot # 58, Road No.11, Bock-F, Banani Dhaka 1213</td>
+<td>01959901302</td>
+<td>sales6@platinumhotels.com.bd</td>
+</tr>
+<tr>
+<td>Banani	</td>
+<td>Hotel swiss park</td>
+<td>Road 15, House 62, Block C, Banani, Dhaka 1212</td>
+<td>01838913960</td>
+<td>info@hotelswissparkbd.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Hotel orchard suites</td>
+<td>hotel orchard suites</td>
+<td>1720045840</td>
+<td>info@hotelswissparkbd.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Far pavilion</td>
+<td>Road # 15, House # 64, Block – C, Banani, Dhaka</td>
+<td>01817152324</td>
+<td>pavilion@bangla.net</td>
+</tr>
+<tr>
+<td>Banani		 		</td>
+<td>Sky park guest house</td>
+<td>House # 85, Road # 15/A, Bock-B. Banani.P.C. 1213, Gulshan. Dhaka.</td>
+<td>01716419819</td>
+<td>salimahamed29@yahoo.com</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Marino hotel</td>
+<td>Rd No.11, Banani,Dhaka</td>
+<td>01819988199</td>
+<td>banani@marinohotel.com.bd</td>
+</tr>
+<tr>
+<td>Banani				</td>
+<td>Hotel de castle limited</td>
+<td>Block-B, 72 Road 21, Dhaka 1213</td>
+<td>01981422421</td>
+<td>info@hoteldecastlebd.com</td>
+</tr>
+<tr>
+<td>Uttra			</td>
+<td>Platinum Residence</td>
+<td>42 Rd No. 20/B, Dhaka 1230</td>
+<td>01922110945	</td>
+<td>sales4@platinumhotels.com.bd</td>
+</tr>
+<tr>
+<td>Uttra			</td>
+<td>Hotel milina</td>
+<td>4 Rd No. 9, Dhaka 1230</td>
+<td>01611264215	</td>
+<td>info@hotelmilina.com</td>
+</tr>
+<tr>
+<td>Gulshan				</td>
+<td>Rose wood residence</td>
+<td>House # 6/A. Road #13, Gulshan- 1, Dhaka</td>
+<td>01711247900</td>
+<td>info@rosewoodresidence.com</td>
+</tr>
+<tr>
+<td>Gulshan				</td>
+<td>Holiday villa gram</td>
+<td>Road No. # 7, House No. # SW (E) 1A/2,, Gulshan 1 Model Town,, Dhaka 1212</td>
+<td>01678767501</td>
+<td>info@holidayvillagram.com</td>
+</tr>
+<tr>
+<td>Gulshan				</td>
+<td>Rigs inn</td>
+<td>9 Road 23/A, Dhaka 1212</td>
+<td>01713038592</td>
+<td>reservation@rigsinn.com</td>
+</tr>
+<tr>
+<td>khulna				</td>
+<td>Hotel castle salam ltd</td>
+<td>G-8 K.D.A avenue khulna-9100</td>
+<td>01716502720</td>
+<td>hotelcastlesalam@gmail.com</td>
+</tr>
+<tr>
+<td>khulna				</td>
+<td>The millennium hotels ltd</td>
+<td>B-4 majid sarany KDA Khulna</td>
+<td>01756398881</td>
+<td>themillenniumhotels@gmail.com</td>
+</tr>
+<tr>
+<td>chittagong				</td>
+<td>Naba inn</td>
+<td>house-60 road-5 g.e.c circle chittagong</td>
+<td>01755564382</td>
+<td>nabainn@gmail.com</td>
+</tr>
+<tr>
+<td>chittagong				</td>
+<td>Hotel lords inn (pvt) ltd</td>
+<td>hosna kalam complex east nasirabad</td>
+<td>01770346333</td>
+<td>info@hotellordsinnbd.com</td>
+</tr>
+<tr>
+<td>chittagong				</td>
+<td>Well park</td>
+<td>road-1 plot-2 o.r nizam road chittagong</td>
+<td>01812027649</td>
+<td>reservation@wellparkbd.com</td>
+</tr>
+<tr>
+<td>Rajshahi				</td>
+<td>Hotel Nice International</td>
+<td>Ganakpara (west of P.N Girls High School) Rajshahi-6100</td>
+<td>0721-776188, 771808</td>
+<td>Website URL: www.hotelnice-raj.com
+Email: Hotel.nice@yahoo.com</td>
+</tr>
+<tr>
+<td>Rajshahi				</td>
+<td>Haq’s Inn</td>
+<td>Bir Srestha Captain Mohiuddin Zahangir Sarani, Shiroil, Rajshahi -6100</td>
+<td>810420, 810421</td>
+<td>Email: Hotel.nice@yahoo.com
+Email: haqsinn@librabd.net</td>
+</tr>
+<tr>
+<td>Rajshahi			</td>
+<td>Hotel Dalas International</td>
+<td>Bindur More, Rail Gate, Rajshahi</td>
+<td>Phone: 811470, 773839,
+Mobile: 0171-802387</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Rangpur	
+
+</td>
+<td>Parjatan Motel	</td>
+<td>K. Mission Road, Rangpur</td>
+<td>Phone No- 0521-63681</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Rangpur	Hotel 			</td>
+<td>R.D.R.S in Rangpur</td>
+<td>Jail Road, Rangpur</td>
+<td>Phone No- 0521-62598,62863
+Fax No- 0521-62182</td>
+<td>E-mail:nbi@rdrsrangpur.org
+website:www.rdrsbangla.net</td>
+</tr>
+<tr>
+<td>Bogra	
+	</td>
+<td>Parjatan Motel</td>
+<td>Bangladesh Parjatan Corporation	Sherpur Road, Bogra</td>
+<td>Phone: Tel : +880-51-67024-27, Fax: 051-66753</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Sylhet				</td>
+<td>Hotel supreme</td>
+<td>jaflong road mirabazar sylhet</td>
+<td>01711197012</td>
+<td>hotelsupremsylhet@yahoo.com</td>
+</tr>
+</table>
+</center>
+<div class="fix footer">
+		<center><p>&copy; SAKIFA AKTAR,All Rights Reserved</p></center>
+		</div>
+
+    
+</div>
+</div>
+</body>
+</html>

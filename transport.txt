@@ -1,0 +1,116 @@
+ <!Doctype html>
+<html>
+	<head>
+		<title>About Bangladesh</title>
+		<link rel="stylesheet" type="text/css" href="style1.css"/>
+	</head>
+	<body>
+	<div class="fix main">
+	
+	<div class="fix ab">
+	<div id="head_wrap">
+	
+	<div id="hhh">
+	 <h1>Tourism Of Bangladesh</h1>
+	 <center>
+		<img src="images/logo1.png" style="float:center"/>
+		</center>
+	</div>
+	</div>
+	</div>
+	<div class="fix menu">
+		<ul>
+			<li><a href="homenew.html">Home</a></li>
+			<li><a href="AboutBangladesh.html">About Bangladesh</a></li>
+			
+			<li><a href="searchcode.php">Things to see</a></li>
+			<li class="dropdown">
+    <a href="" class="dropbtn">Where to stay</a>
+    <div class="dropdown-content">
+      <a href="slider.html">Hotels</a>
+      <a href="Rajshahi.html">Resorts</a>
+      
+    </div>
+  </li>
+	        <li><a href="flipgalary.html">Things to do</a></li>
+			<li><a href="travelfinal.html">Travel Essential</a></li>
+		</ul>
+		</div>
+	    
+		<div class="fix header">
+			<center><h1>About Bangladesh</h1></center>
+		</div>
+		<div class="fix slider">
+		
+		</div>
+		<div class="fix mainmenu">
+		<ul>
+  <li><a class="active" href="history.html">History of Bangladesh</a></li>
+  <li><a href="symbol.html">National Symbol</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Map</a>
+    <div class="dropdown-content">
+      <a href="Dhaka.html">Dhaka</a>
+      <a href="Rajshahi.html">Rajshahi</a>
+      <a href="Chittagong.html">Chittagong</a>
+	  <a href="Khulna.html">Khulna</a>
+	  <a href="Barisal.html">Barisal</a>
+	  <a href="Rangpur.html">Rangpur</a>
+	  <a href="Sylhet.html">sylhet</a>
+    </div>
+  </li>
+  <li><a href="geography.html">Geography and climate</a></li>
+		<li><a href="">Culture religion & Language</a></li>
+</ul>
+		</div>
+		<div class="fix maincontent">
+		
+		<div class="fix content">
+		<center>
+		<h1>Bangladesh at a glance</h1> 
+		</center>
+		<p>Official Name: The People's Republic of Bangladesh</p>
+
+        <p>State Religion: Islam but other main religions namely Hinduism, Buddhism, Christianity are practiced in peace and harmony.</p>
+
+        <p>State Language: Bangla</p>
+
+        <p>National Anthem: The first ten lines of "Amar Sonar Bangla". written by Nobel Laureate Rabindranath Tagore.</p>
+
+        <p>National Flag: Consists of a circle coloured red throughout its area, resting on a green rectangular background.
+		The length to width ratio of the rectangle is 10:6 and the circle has a radius of one fifth of the length.</p>
+
+        <p>National Emblem: The national flower "Shapla" (nymphea-nouchali) resting on water, having on each side an ear of paddy and being surmounted 
+		by three connected leaves of jute with two stars on each side of the leaves.</p>
+
+        <p>Capital: Dhaka</p>
+
+        <p>Nationality: Bangladeshi</p>
+
+        <p>Name of Currency: Taka (TK)</p>
+         <p>Denominations:
+        Notes:Taka 1000, 500, 100, 50, 20, 10, 5, 2 & 1
+        Coins: Taka 5, 2, 1 and Paisa 50, 25, 10, 5, 2 & 1</p>
+
+       <p>Geographical Location: Between 20°34' and 26°38' north latitude and between 88°01' and 92°41' east longitude.</p>
+
+       <p>Boundary: North: India
+          West: India
+          South: Bay of Bengal
+          East: India and Myanmar</p>
+
+        <p>Area: 56977 sq. miles or 147570 sq. km.</p>
+
+        <p>Territorial Water: 200 nautical miles.</p>
+
+ 
+
+        <h4>Source: Statistical Pocketbook of Bangladesh-2013</h4>
+		</div>
+		</div>
+		<div class="fix footer">
+		<center><p>&copy; SAKIFA AKTAR,All Rights Reserved</p></center>
+		</div>
+	</div>
+	</body>
+</html>
